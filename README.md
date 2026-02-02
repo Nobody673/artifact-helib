@@ -4,7 +4,7 @@ Reproduce:
   git clone https://github.com/homenc/HElib.git
   cd HElib
   git checkout 3e337a6
-  git apply /path/to/helib.patch
+  git apply /path/to/GN8191.patch
 
   mkdir build && cd build
   cmake .. -DCMAKE_BUILD_TYPE=Release
