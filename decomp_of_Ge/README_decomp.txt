@@ -1,31 +1,6 @@
 Magic Polynomial Search Data (Digit Extraction in BGV/HElib)
 =========================================================
 
-[中文说明]
---------
-本文件夹包含我们对 BGV/HElib 自举（bootstrapping）中 **digit extraction** 阶段所用的
-**magic polynomial** 进行搜索与提升（Hensel lifting）得到的实验数据。
-
-我们共整理并搜索了来自三篇文章的 25 组不同明文参数 (p, e, d)：
-
-  - ChenHan2018
-  - HaleviShoup2021
-  - MaHuangWangWang2024
-
-其中，ChenHan2018 使用的两组参数 (17,4,40) 与 (127,3,36) 与 HaleviShoup2021 中相同。
-另外，文献中给出的 (5,6,-) 与 (31,3,-) 未给出槽次数/扩张度 d 的取值，因此我们自行选择了
-共 18 个不同的 d 值进行搜索实验（以覆盖可能的 slot-degree 选择）。
-
-每次成功搜索会输出：
-  - g(X): 用于修正/搜索的 power-of-two 稀疏多项式（系数模 p）
-  - h(X)=f(X)+g(X): 满足在 F_p 上含有足够多 degree-d 不可约因子的候选
-  - 以及将 h(X) 提升到 Z/p^eZ 后的分解分组结果：a(X) 与一组 degree-d 因子 h_i(X)
-
-实验程序已在 GitHub 中上传，文件名为：search_and_lift.cpp（编译后可执行文件 search_and_lift）。
-
-----------------------------------------------------------------
-[English overview]
-----------------
 This folder contains search results for **magic polynomials** used in the **digit extraction**
 stage of BGV bootstrapping (HElib). We collected 25 parameter configurations (p, e, d) from:
 
