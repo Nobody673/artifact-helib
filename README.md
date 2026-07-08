@@ -66,7 +66,7 @@ Parameter presets:
 ./fatboot i=3 h=24 t=1 newbts=1 newks=1 thick=1 repeat=1
 
 # p = 65537
-./fatboot i=3 h=24 t=1 newbts=1 newks=1 thick=1 repeat=1
+./fatboot i=4 h=24 t=1 newbts=1 newks=1 thick=1 repeat=1
 ```
 
 6. Revert to the clean version
